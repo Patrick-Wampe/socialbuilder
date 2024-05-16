@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fake News Checker</title>
+		<meta charset="utf-8">
+        <style>
+            p {
+                color: purple;
+                font-size: 2em;
+            }
+            
+            #grandTitre
+            {
+                color : blue;
+            }
+            
+            .fakenews
+            {
+                //width: 50%;
+            }
+        </style>
+        
+        <script>
+            function imagedebase()
+            {
+                document.getElementById('image').src = "https://www.francetvinfo.fr/pictures/NHPTTn8uaxnYIg6etQMXvPzFecg/1200x900/2024/03/19/fake-news-65f94c5c4d1e2845502769.jpg";
+            }
+            
+            function image2()
+            {
+                document.getElementById('image').src = "https://www.parismatch.com/lmnr/r/960,640,FFFFFF,forcex,center-middle/img/var/pm/public/styles/paysage/public/media/image/2022/03/06/23/Monabilla-Lisa-Un-artiste-transforme-Nabilla-en-chef-d-oeuvre.jpg?VersionId=Tq6_ajXRFjI1zWvFTlqrntMgYLudAgdK";
+            }
+			
+			function augmentertaille()
+			{
+				document.getElementById("image").width = "3000";
+			}
+        </script>
+    </head>
+    
+    <body>
+		<h1 id="grandTitre">Bienvenue sur mon fake news checker</h1>
+		<h1>Un autre grand titre</h1>
+		<h3>Je t'explique ce que tu pourras faire</h3>
+		<p id="grandTitre2">Une fake news, c'est quoi :<br>Une info fausse mais qui semble vrai.</p>
+		<p>Elles sont partout.</p>
+		<button onclick='imagedebase()'>Image de base</button>
+		<button onclick='image2()'>image modifié</button>
+		<img id="image" onmouseover="this.style.width='200px'"  class="fakenews" src="https://www.francetvinfo.fr/pictures/NHPTTn8uaxnYIg6etQMXvPzFecg/1200x900/2024/03/19/fake-news-65f94c5c4d1e2845502769.jpg" alt="Italian Trulli">
+    </body>
+</html>
+
+
